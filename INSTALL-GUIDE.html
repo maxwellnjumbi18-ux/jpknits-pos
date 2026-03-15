@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JP Knits POS — Install Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #f0f0f8; padding: 32px 20px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 800; color: #e8b86d; margin-bottom: 8px; }
+  .sub { color: #9898b8; margin-bottom: 32px; font-size: 15px; }
+  .step { background: #13131a; border: 1px solid #2a2a3d; border-radius: 14px; padding: 24px; margin-bottom: 16px; }
+  .step-num { background: #e8b86d; color: #000; font-weight: 900; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; margin-bottom: 12px; }
+  h2 { font-size: 17px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+  p, li { font-size: 14px; color: #c8c8e0; line-height: 1.8; }
+  ul { padding-left: 20px; margin-top: 8px; }
+  .code { background: #1c1c27; border: 1px solid #2a2a3d; border-radius: 8px; padding: 10px 14px; font-family: monospace; font-size: 13px; color: #4ecdc4; margin: 10px 0; word-break: break-all; }
+  .highlight { color: #e8b86d; font-weight: 700; }
+  .note { background: rgba(232,184,109,0.08); border: 1px solid rgba(232,184,109,0.25); border-radius: 8px; padding: 12px; font-size: 13px; color: #c8c8e0; margin-top: 12px; }
+  a { color: #e8b86d; }
+  .files { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .file { background: #1c1c27; border: 1px solid #2a2a3d; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-family: monospace; color: #69db7c; }
+</style>
+</head>
+<body>
+
+<h1>📲 Install JP Knits POS as an App</h1>
+<p class="sub">Follow these steps to host your POS online and install it on any phone or computer — completely free.</p>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <h2>Create a free GitHub account</h2>
+  <p>Go to <a href="https://github.com" target="_blank">github.com</a> and sign up. It's completely free and takes 2 minutes.</p>
+</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <h2>Create a new repository</h2>
+  <p>After signing in:</p>
+  <ul>
+    <li>Click the <span class="highlight">+</span> button (top right) → <span class="highlight">New repository</span></li>
+    <li>Name it: <span class="highlight">jpknits-pos</span></li>
+    <li>Set it to <span class="highlight">Public</span></li>
+    <li>Tick <span class="highlight">Add a README file</span></li>
+    <li>Click <span class="highlight">Create repository</span></li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-num">3</div>
+  <h2>Upload all these files</h2>
+  <p>Click <span class="highlight">Add file → Upload files</span> and drag ALL of these files in:</p>
+  <div class="files">
+    <div class="file">📄 jp-knits-pos.html</div>
+    <div class="file">📄 manifest.json</div>
+    <div class="file">📄 sw.js</div>
+    <div class="file">🖼️ icon-192.png</div>
+    <div class="file">🖼️ icon-512.png</div>
+  </div>
+  <p style="margin-top:10px;">Then click <span class="highlight">Commit changes</span> (green button at the bottom).</p>
+</div>
+
+<div class="step">
+  <div class="step-num">4</div>
+  <h2>Turn on GitHub Pages</h2>
+  <ul>
+    <li>Go to your repository → click <span class="highlight">Settings</span> (top menu)</li>
+    <li>In the left sidebar click <span class="highlight">Pages</span></li>
+    <li>Under "Source" select <span class="highlight">Deploy from a branch</span></li>
+    <li>Branch: <span class="highlight">main</span>, folder: <span class="highlight">/ (root)</span></li>
+    <li>Click <span class="highlight">Save</span></li>
+  </ul>
+  <div class="note">⏳ Wait 2–3 minutes, then your POS will be live at:<br>
+  <div class="code">https://YOUR-USERNAME.github.io/jpknits-pos/jp-knits-pos.html</div>
+  (replace YOUR-USERNAME with your GitHub username)
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-num">5</div>
+  <h2>Install on Android phone</h2>
+  <ul>
+    <li>Open the URL above in <span class="highlight">Chrome on your Android phone</span></li>
+    <li>A banner will appear at the bottom saying <span class="highlight">"Install JP Knits POS"</span></li>
+    <li>Tap <span class="highlight">Install App</span></li>
+    <li>The app appears on your home screen and opens fullscreen like a native app ✅</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-num">6</div>
+  <h2>Install on iPhone / iPad</h2>
+  <ul>
+    <li>Open the URL in <span class="highlight">Safari</span> (must be Safari, not Chrome)</li>
+    <li>Tap the <span class="highlight">Share button</span> (the square with an arrow at the bottom)</li>
+    <li>Scroll down and tap <span class="highlight">"Add to Home Screen"</span></li>
+    <li>Tap <span class="highlight">Add</span> (top right)</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-num">7</div>
+  <h2>Install on Windows / Mac computer</h2>
+  <ul>
+    <li>Open the URL in <span class="highlight">Chrome or Edge</span></li>
+    <li>Look for the <span class="highlight">install icon</span> in the address bar (looks like a monitor with a + sign)</li>
+    <li>Click it → <span class="highlight">Install</span></li>
+    <li>The POS opens in its own window without browser toolbars ✅</li>
+  </ul>
+</div>
+
+<div class="step">
+  <div class="step-num">8</div>
+  <h2>Share with other devices in the shop</h2>
+  <p>Give the same URL to every phone or computer in the shop. Each device can install the app independently. For real-time sync between all devices, configure Firebase in <span class="highlight">Settings → Multi-Device Sync</span> inside the app.</p>
+  <div class="note">✅ The URL never changes. Whenever you update the files on GitHub, all installed apps will automatically get the new version.</div>
+</div>
+
+</body>
+</html>
