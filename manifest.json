@@ -2,42 +2,24 @@
   "name": "JP Knits & Embroidery POS",
   "short_name": "JP Knits POS",
   "description": "Point of Sale & Queue Management System",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#e8b86d",
   "orientation": "any",
-  "lang": "en",
-  "categories": ["business", "productivity"],
   "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "New Order",
-      "short_name": "New Order",
-      "description": "Create a new customer order",
-      "url": "./jp-knits-pos.html#neworder",
-      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Queue",
-      "short_name": "Queue",
-      "description": "View and manage the queue",
-      "url": "./jp-knits-pos.html#queue",
-      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
-    }
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
+```
+
+3. At the top where it shows the filename `manifest (1).json` → **change it to** `manifest.json`
+4. Click **Commit changes**
+
+Then do the same for `sw (1).js` → rename it to `sw.js` with the same content.
+
+**But honestly the fastest fix** — let me just tell you what to type in your browser right now. Since `index.html` is already uploaded and working, try this URL:
+```
+https://maxwellnjumbi18-ux.github.io/jpknits-pos/
